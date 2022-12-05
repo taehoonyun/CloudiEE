@@ -1,5 +1,5 @@
 # Descripttion
-## I implemented a login function and create account function and used JSON to save accounts or a new account data to log in
+I implemented a login function and create account function and used JSON to save accounts or a new account data to log in
 
 # skills
 - HTML
