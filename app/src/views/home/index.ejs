@@ -9,14 +9,20 @@
       crossorigin="anonymous"
     ></script>
     <script src="/js/home/index.js" defer></script>
+    <script src="/js/home/clock.js" defer></script>
+    <script src="/js/home/todolist.js" defer></script>
+    <script src="/js/home/weather.js" defer></script>
     <link rel="stylesheet" href="/css/home/index.css" />
+
     <title>Document</title>
   </head>
   <body>
-    <div class="header">
-      <div class="title">
-        <i class="fab fa-accusoft"></i>
-        TaehoonCoding
+    <header class="header">
+      <div class="web_logo">
+        <img src="https://i.postimg.cc/Tww0dhS0/raining.png" /><span
+          class="tittle"
+          >CloudiEE</span
+        >
       </div>
       <ul class="options">
         <li><a href="#">Home</a></li>
@@ -25,11 +31,24 @@
         <li><a href="#">FAQ</a></li>
         <li><a href="#">Bookings</a></li>
       </ul>
-      <div class="icons">
-        <i class="far fa-kiss-wink-heart"></i>
-        <i class="fas fa-kiwi-bird"></i>
+      <img class="more" src="https://i.postimg.cc/d0fqcH3g/more.png" />
+    </header>
+    <section class="main_contents hidden" id="main_contents">
+      <h1 id="welcome">Start what you need to do!</h1>
+      <form id="todo">
+        <p><b>Memo</b></p>
+        <input type="text" placeholder="Write a To Do and press enter" />
+      </form>
+      <ul id="todo_list"></ul>
+
+      <div class="date_time">
+        <h2 id="clock"></h2>
+        <h2 id="currentDate"></h2>
       </div>
-      <a href="#" class="more"><i class="fas fa-bars"></i></a>
-    </div>
+      <div class="weather_location">
+        <h4 id="location"></h4>
+        <h4 id="weather"></h4>
+      </div>
+    </section>
   </body>
 </html>

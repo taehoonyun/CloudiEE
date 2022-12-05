@@ -5,29 +5,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CloudiEE</title>
     <script src="/js/home/register.js" defer></script>
-    <link rel="stylesheet" href="/css/home/login.css" />
+    <link rel="stylesheet" href="/css/home/register.css" />
   </head>
   <body>
-    <div class="login-page">
-      <div class="form">
-        <form class="register-form">
-          <input id="id" type="text" placeholder="ID" />
-          <input id="name" type="text" placeholder="name" />
-          <input id="email" type="text" placeholder="email" />
-          <input id="pwd" type="password" placeholder="password" />
-          <input
-            id="confirmedpwd"
-            type="password"
-            placeholder="confirmed-password"
-          />
-          <p id="btn">create</p>
-          <p class="message">
-            Already registered? <a href="/login">Sign In</a>
-          </p>
-        </form>
+    <section class="register_func" id="register_func">
+      <div class="web_logo">
+        <img src="https://i.postimg.cc/Tww0dhS0/raining.png" /><span
+          class="tittle"
+          >CloudiEE</span
+        >
       </div>
-    </div>
+      <div class="register_page">
+        <div class="form">
+          <form class="register_form">
+            <span>User ID</span>
+            <input id="id" type="text" placeholder="ID" />
+            <span>User Name</span>
+            <input id="name" type="text" placeholder="name" />
+            <span>User Email</span>
+            <input id="email" type="text" placeholder="email" />
+            <span>User Password</span>
+            <input id="pwd" type="password" placeholder="password" />
+            <span>confirmed Password</span>
+            <input
+              id="confirmedpwd"
+              type="password"
+              placeholder="confirmed-password"
+            />
+            <div class="btn_form">
+              <button id="btn">create</button>
+              <p class="message">
+                Already registered? <a href="/login">Sign In</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

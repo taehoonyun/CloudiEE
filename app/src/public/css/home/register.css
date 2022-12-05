@@ -1,0 +1,76 @@
+body{
+    background-image: url(https://i.postimg.cc/QxcBW0kK/16.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.web_logo{
+    position: absolute;
+    top:2.5%;
+    left:2.5%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color:white;
+  }
+  .web_logo img{
+    width: 50px;
+    height: 50px;
+    margin: 12px 12px;
+  }
+  .form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .message{
+    color: white;
+  }
+  .register_func{
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top:10%;
+    left:20%;
+    width: 45%;
+    height: 50%;
+    padding: 80px 80px;
+    border: 5px solid white;
+    border-radius: 50px;
+  
+  }
+  .register_form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 80%;
+    padding: 20px 20px;
+
+  }
+  .register_form span{
+    text-align: left;
+    color:white;
+    font-size: 18px;
+    padding: 12px 0px;
+  }
+  .register_form input{
+    width: 100%;
+    height: 24px;
+  }
+  #btn{
+    margin: 8px;
+    margin-top: 36px; 
+    background-color: #ff99c2; 
+    border: none;
+    color: white;
+    padding: 8px 0px;
+    font-size: 24px;
+    width: 40%;
+    border-radius: 15px;
+  }
+  .btn_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

@@ -1,26 +1,61 @@
-<!-- Copyright (c) 2022 by Aigars Silkalns (https://codepen.io/colorlib/pen/rxddKy) -->
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="/js/home/login.js" defer></script>
+    <title>CloudiEE</title>
+    <script src="/js/home/index.js" defer></script>
     <link rel="stylesheet" href="/css/home/login.css" />
+    <script src="/js/home/login.js" defer></script>
+    <script src="/js/home/clock.js" defer></script>
+    <script src="/js/home/quote.js" defer></script>
+    <script src="/js/home/todolist.js" defer></script>
+    <script src="/js/home/weather.js" defer></script>
   </head>
   <body>
-    <div class="login-page">
-      <div class="form">
-        <form class="login-form">
-          <input id="id" type="text" placeholder="username" />
-          <input id="pwd" type="password" placeholder="password" />
-          <button id="btn">login</button>
+    <section class="login_func" id="login_func">
+      <div class="web_logo">
+        <img src="https://i.postimg.cc/Tww0dhS0/raining.png" /><span
+          class="tittle"
+          >CloudiEE</span
+        >
+      </div>
+      <div class="qoutes_login">
+        <div class="quotes_authors">
+          <span>Today's quote</span>
+          <div id="quote"></div>
+          <span id="author"></span>
+        </div>
+        <form class="login_form hidden" id="loginform">
+          <h1>Welcome to CloudiEE</h1>
+          <div class="IdnPwd">
+            <span>User ID</span>
+            <input
+              id="id"
+              type="text"
+              placeholder="ID"
+              maxlength="10"
+              required
+            />
+            <span>User Password</span>
+            <input
+              id="pwd"
+              type="password"
+              placeholder="password"
+              maxlength="12"
+              minlength="4"
+            />
+          </div>
+          <div class="btns">
+            <button id="btn">Login</button> <button>Sign Up</button>
+          </div>
           <p class="message">
             Not registered? <a href="/register">Create an account</a>
           </p>
         </form>
       </div>
-    </div>
+    </section>
   </body>
 </html>
+
+<!-- image by flaticon -->

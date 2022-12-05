@@ -1,31 +1,76 @@
-body{
-    background-color: black;
+html{  
+    height: 100%;
 }
+body{
+    height: 100%;
+}
+
+.web_logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+    color:black; 
+    font-size: 24px;
+  }
+.web_logo img{
+    width: 50px;
+    height: 50px;
+    margin: 12px 12px;
+  }
+.main_contents{
+    background-image: url(https://i.postimg.cc/MZ7Wr96m/kevin-wang-b-I423-Dx-LEYk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+  
 
 .header{
     display: flex;
     justify-content: space-between;
-    background-color:  gray;
-    color: white;
-    align-items: center;
-    border-radius: 10px;
-    border: 10px;
-    border-color: aliceblue;
+    font-size: 24px;
+    width: 100%;
+    /* background-color:  white; */
+    /* color: black; */
+    /* align-items: center; */
     /* margin: 20px 8px; */
     /* padding: 10px; */
 }
-
-.title{
-    color: tomato;
-    font-size: 20px;
-    font-weight: bold;
+#welcome{
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content:  center;
+    font-size: 60px;
 }
-
-.title i{
-    color:yellow;
+#todo{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    align-items: center;
 }
-
+#todo input{
+    font-size: 24px;
+}
+#todo_list{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    height: 25%;
+    align-items: center;
+    overflow: auto;
+}
 .options{
+    width: 40%;
     list-style: none;
     display: flex;
     padding: 0;
@@ -38,7 +83,7 @@ body{
 
 a{
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 10px;
     
 }
@@ -48,18 +93,20 @@ a{
     border-radius: 4px;
 }
 
-.icons{
-    margin: auto 0px;
-    color: palegreen;
-    /* width: 100%; */
+.date_time{
+    color: white;
+    position: absolute;
+    right: 12px;
 }
-
-.icons i{
-    margin: auto 5px;
-    padding: 0;
+.weather_location{
+    color: white;
+    position: absolute;
+    top:20%;
+    right: 12px;
 }
 
 .more{
+    width: 30px;
     display: none;
     position: absolute;
     top: 10px;
@@ -101,3 +148,6 @@ a{
 
     }
 }
+
+/* Photo by <a href="https://unsplash.com/ja/@kevin_w_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Wang</a> on <a href="https://unsplash.com/s/photos/rain?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   */
