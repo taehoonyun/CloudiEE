@@ -1,6 +1,6 @@
 # Descripttion
 I implemented a login function and create account function and used JSON to save a new accounts information or load saved accounts information to log in.
-I followed Rest API rule.
+I followed a Rest API rule.
 
 # skills
 - HTML
